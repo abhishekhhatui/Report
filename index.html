@@ -11,11 +11,13 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
-    <title>Dashboard |ICICI IOT</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Report |ICICI IOT</title>
 </head>
 
-<body>
-    <div class="d-flex" id="wrapper">
+<body><div class="d-flex" id="wrapper">
         <div class="bg-white" id="sidebar-wrapper">
             <div class="sidebar-heading text-center py-4 primary-text fs-4 fw-bold text-uppercase border-bottom">
                 <i class="fa fa-bars me-2"></i>ICICI IOT
@@ -69,8 +71,7 @@
                 <div class="collaspe navbar-collaspe" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                         <li class="nav-item-dropdown">
-                            <a href="#" class="nav-link dropdown-toggle second-text fw-bold" id="navbarDropdown"
-                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <a href="#" class="nav-link dropdown-toggle second-text fw-bold" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 <i class="fa fa-user me-2"></i>Admin
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -85,132 +86,70 @@
 
                 </div>
             </nav>
-
-            <!DOCTYPE html>
-            <html lang="en">
-
-            <head>
-                <meta charset="utf-8">
-                <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-                <title>Report</title>
-                <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
-                <link rel="stylesheet" href="assets/css/styles.css">
-            </head>
-
-            <body>
-                <div class="container-fluid"
-                    style="background: var(--bs-light);margin-top: 3px;margin-bottom: 4px;border-radius: 7px;">
-                    <div class="row">
-                        <div class="col" style="margin: 7px;padding-top: 4px;"><label class="form-label"
-                                style="font-weight: bold;color: var(--bs-pink);">Select Device:&nbsp; &nbsp;
-                                &nbsp;&nbsp;</label><select>
-                                <option value="" selected="">Device Name1</option>
-                                <option value="">Device Name2</option>
-                                <option value="">Device Name3</option>
-                            </select></div>
-                        <div class="col" style="margin: 7px;padding-top: 4px;"><label class="form-label"
-                                style="font-weight: bold;color: var(--bs-pink);">From Date:&nbsp; &nbsp; &nbsp;
-                                &nbsp;</label><input type="date"></div>
-                        <div class="col" style="margin: 7px;padding-top: 4px;"><label class="form-label"
-                                style="font-weight: bold;color: var(--bs-pink);">To Date:&nbsp; &nbsp; &nbsp; &nbsp;
-                                &nbsp; &nbsp;&nbsp;</label><input type="date"></div>
-                        <div class="col text-end" style="margin: 7px;padding-top: 4px;"><button class="btn btn-success"
-                                type="submit" style="border-radius: 6px;">Button</button></div>
-                    </div>
+            
+             <div class="container-fluid" style="background: var(--bs-light);margin-top: 4px;margin-bottom: 4px;border-radius: 7px;">
+        <div class="row">
+            <div class="col" style="margin: 7px;padding-top: 4px;"><label class="form-label" style="color: #ff9955;margin: 3px;padding-top: 2px;padding-left: 2px; padding-bottom: 2px;">Select Device:&nbsp;</label>
+                <select style="margin: 3px;padding-top: 2px;padding-left: 2px; padding-bottom: 2px;">
+                    <option value="" selected="">Device Name1</option>
+                    <option value="">Device Name2</option>
+                    <option value="">Device Name3</option>
+                </select>
+        </div>
+            <div class="col" style="margin: 7px;padding-top: 4px;"><label class="form-label" style="color: #ff9955;margin: 3px;padding: 2px;">From Date:&nbsp;</label><input type="date" style="margin: 3px;padding: 2px;"></div>
+            <div class="col" style="margin: 7px;padding-top: 4px;"><label class="form-label" style="color: #ff9955;margin: 3px;padding: 2px;">To Date:&nbsp;</label><input type="date" style="margin: 3px;padding: 2px;"></div>
+            <div class="col text-end" style="margin: 7px;padding-top: 4px;"><button class="btn btn-success" type="submit" style="margin: 3px;border-radius: 6px;">Submit</button></div>
+        </div>
+    </div>
+    <div class="container-fluid" style="background: var(--bs-light);margin-top: 4px;margin-bottom: 4px;border-radius: 7px;"><label class="form-label" style="color: #ff9955;margin-top: 12px;margin-left:4;padding-top: 3px;padding-bottom: 3px;padding-left: 10px;">Device Data</label>
+        <div class="row" style="margin-top: 7px;margin-bottom: 7px;margin-left: 3px;margin-right: 3px;padding: 3px;">
+            <div class="col" style="margin-top: 5px;margin-bottom: 4px;"><select style="margin-top: 3px;margin-bottom: 3px;margin-left: 3px;">
+                    <option value="" selected="">10</option>
+                    <option value="">20</option>
+                    <option value="">30</option>
+                    <option value="">40</option>
+                    <option value="">50</option>
+                    <option value="">All</option>
+                </select><label class="form-label" style="margin-top: 3px;margin-bottom: 3px;margin-left: 3px;">Entries</label></div>
+            <div class="col text-end" style="margin-top: 5px;margin-bottom: 4px;"><label class="form-label" style="margin-top: 3px;margin-bottom: 3px;margin-right: 3px;">Search:&nbsp;</label><input type="search" style="margin-top: 3px;margin-bottom: 3px;margin-right: 3px;"></div>
+        </div>
+        <div class="row">
+            <div class="col" style="margin-right: 3px;margin-left: 3px;">
+                <div class="table-responsive" style="margin-right: 0px;margin-top: 3px;margin-bottom: 3px;">
+                    <table class="table">
+                        <thead>
+                            <tr style="background: #ff6600;border-style: solid;border-color: var(--bs-cyan);">
+                                <th class="border rounded-0 border-3 border-warning" style="background: transparent;text-align: center;font-size: 14px;border-style: solid;border-color: var(--bs-orange);border-top-color: var(--bs-yellow);color: var(--bs-white);margin: 4px;padding: 8px;">Sr no</th>
+                                <th class="border rounded-0 border-3 border-warning" style="background: transparent;text-align: center;font-size: 14px;border-style: solid;border-color: var(--bs-orange);border-top-color: var(--bs-yellow);color: var(--bs-white);margin: 4px;padding: 8px;">TAPL</th>
+                                <th class="border rounded-0 border-3 border-warning" style="background: transparent;text-align: center;font-size: 14px;border-style: solid;border-color: var(--bs-orange);border-top-color: var(--bs-yellow);color: var(--bs-white);margin: 4px;padding: 8px;">Device ID</th>
+                                <th class="border rounded-0 border-3 border-warning" style="background: transparent;text-align: center;font-size: 14px;border-style: solid;border-color: var(--bs-orange);border-top-color: var(--bs-yellow);color: var(--bs-white);margin: 4px;padding: 8px;">Time Stamp</th>
+                                <th class="border rounded-0 border-3 border-warning" style="background: transparent;text-align: center;font-size: 14px;border-style: solid;border-color: var(--bs-orange);border-top-color: var(--bs-yellow);color: var(--bs-white);margin: 4px;padding: 8px;">Auto Manual</th>
+                                <th class="border rounded-0 border-3 border-warning" style="background: transparent;text-align: center;font-size: 14px;border-style: solid;border-color: var(--bs-orange);border-top-color: var(--bs-yellow);color: var(--bs-white);margin: 4px;padding: 8px;">Tamper</th>
+                                <th class="border rounded-0 border-3 border-warning" style="background: transparent;text-align: center;font-size: 14px;border-style: solid;border-color: var(--bs-orange);border-top-color: var(--bs-yellow);color: var(--bs-white);margin: 4px;padding: 8px;">External Supply</th>
+                                <th class="border rounded-0 border-3 border-warning" style="background: transparent;text-align: center;font-size: 14px;border-style: solid;border-color: var(--bs-orange);border-top-color: var(--bs-yellow);color: var(--bs-white);margin: 4px;padding: 8px;">Internal Battery</th>
+                                <th class="border rounded-0 border-3 border-warning" style="background: transparent;text-align: center;font-size: 14px;border-style: solid;border-color: var(--bs-orange);border-top-color: var(--bs-yellow);color: var(--bs-white);margin: 4px;padding: 8px;">Gsm Signal Strength</th>
+                                <th class="border rounded-0 border-3 border-warning" style="background: transparent;text-align: center;font-size: 14px;border-style: solid;border-color: var(--bs-orange);border-top-color: var(--bs-yellow);color: var(--bs-white);margin: 4px;padding: 8px;">R Phase Current</th>
+                                <th class="border rounded-0 border-3 border-warning" style="background: transparent;text-align: center;font-size: 14px;border-style: solid;border-color: var(--bs-orange);border-top-color: var(--bs-yellow);color: var(--bs-white);margin: 4px;padding: 8px;">Y Phase Current</th>
+                                <th class="border rounded-0 border-3 border-warning" style="background: transparent;text-align: center;font-size: 14px;border-style: solid;border-color: var(--bs-orange);border-top-color: var(--bs-yellow);color: var(--bs-white);margin: 4px;padding: 8px;">B Phase Current</th>
+                                <th class="border rounded-0 border-3 border-warning" style="background: transparent;text-align: center;font-size: 14px;border-style: solid;border-color: var(--bs-orange);border-top-color: var(--bs-yellow);color: var(--bs-white);margin: 4px;padding: 8px;">R Phase Voltage</th>
+                                <th class="border rounded-0 border-3 border-warning" style="background: transparent;text-align: center;font-size: 14px;border-style: solid;border-color: var(--bs-orange);border-top-color: var(--bs-yellow);color: var(--bs-white);margin: 4px;padding: 8px;">Y Phase Voltage</th>
+                                <th class="border rounded-0 border-3 border-warning" style="background: transparent;text-align: center;font-size: 14px;border-style: solid;border-color: var(--bs-orange);border-top-color: var(--bs-yellow);color: var(--bs-white);margin: 4px;padding: 8px;">B Phase Voltage</th>
+                                <th class="border rounded-0 border-3 border-warning" style="background: transparent;text-align: center;font-size: 14px;border-style: solid;border-color: var(--bs-orange);border-top-color: var(--bs-yellow);color: var(--bs-white);margin: 4px;padding: 8px;">Ware House On Unix Timestamp</th>
+                            </tr>
+                        </thead>
+                        <tbody></tbody>
+                    </table>
                 </div>
-                <div class="container-fluid"
-                    style="background: var(--bs-light);margin-top: 3px;margin-bottom: 4px;border-radius: 7px;">
-                    <label class="form-label" style="padding-top: 27px;font-weight: bold;">Device Data</label>
-                    <div class="row">
-                        <div class="col" style="margin-top: 5px;margin-bottom: 4px;"><select>
-                                <option value="" selected="">10</option>
-                                <option value="">20</option>
-                                <option value="">30</option>
-                                <option value="">40</option>
-                                <option value="">50</option>
-                                <option value="">All</option>
-                            </select><label class="form-label">Entries</label></div>
-                        <div class="col text-end" style="margin-top: 5px;margin-bottom: 4px;"><label
-                                class="form-label">Search:&nbsp;</label><input type="search"></div>
-                    </div>
-                    <div class="row">
-                        <div class="col" style="margin-right: 3px;margin-left: 3px;">
-                            <div class="table-responsive" style="margin-right: 0px;margin-top: 3px;">
-                                <table class="table">
-                                    <thead>
-                                        <tr
-                                            style="background: #ff6600;border-style: solid;border-color: var(--bs-cyan);">
-                                            <th class="border rounded-0 border-3 border-warning"
-                                                style="background: transparent;text-align: center;font-size: 14px;border-style: solid;border-color: var(--bs-orange);border-top-color: var(--bs-yellow);">
-                                                Sr no</th>
-                                            <th class="border rounded-0 border-3 border-warning"
-                                                style="background: transparent;text-align: center;font-size: 14px;border-style: solid;border-color: var(--bs-orange);border-top-color: var(--bs-yellow);">
-                                                TAPL</th>
-                                            <th class="border rounded-0 border-3 border-warning"
-                                                style="background: transparent;text-align: center;font-size: 14px;border-style: solid;border-color: var(--bs-orange);border-top-color: var(--bs-yellow);">
-                                                Device ID</th>
-                                            <th class="border rounded-0 border-3 border-warning"
-                                                style="background: transparent;text-align: center;font-size: 14px;border-style: solid;border-color: var(--bs-orange);border-top-color: var(--bs-yellow);">
-                                                Time Stamp</th>
-                                            <th class="border rounded-0 border-3 border-warning"
-                                                style="background: transparent;text-align: center;font-size: 14px;border-style: solid;border-color: var(--bs-orange);border-top-color: var(--bs-yellow);">
-                                                Auto Manual</th>
-                                            <th class="border rounded-0 border-3 border-warning"
-                                                style="background: transparent;text-align: center;font-size: 14px;border-style: solid;border-color: var(--bs-orange);border-top-color: var(--bs-yellow);">
-                                                Tamper</th>
-                                            <th class="border rounded-0 border-3 border-warning"
-                                                style="background: transparent;text-align: center;font-size: 14px;border-style: solid;border-color: var(--bs-orange);border-top-color: var(--bs-yellow);">
-                                                External Supply</th>
-                                            <th class="border rounded-0 border-3 border-warning"
-                                                style="background: transparent;text-align: center;font-size: 14px;border-style: solid;border-color: var(--bs-orange);border-top-color: var(--bs-yellow);">
-                                                Internal Battery</th>
-                                            <th class="border rounded-0 border-3 border-warning"
-                                                style="background: transparent;text-align: center;font-size: 14px;border-style: solid;border-color: var(--bs-orange);border-top-color: var(--bs-yellow);">
-                                                Gsm Signal Strength</th>
-                                            <th class="border rounded-0 border-3 border-warning"
-                                                style="background: transparent;text-align: center;font-size: 14px;border-style: solid;border-color: var(--bs-orange);border-top-color: var(--bs-yellow);">
-                                                R Phase Current</th>
-                                            <th class="border rounded-0 border-3 border-warning"
-                                                style="background: transparent;text-align: center;font-size: 14px;border-style: solid;border-color: var(--bs-orange);border-top-color: var(--bs-yellow);">
-                                                Y Phase Current</th>
-                                            <th class="border rounded-0 border-3 border-warning"
-                                                style="background: transparent;text-align: center;font-size: 14px;border-style: solid;border-color: var(--bs-orange);border-top-color: var(--bs-yellow);">
-                                                B Phase Current</th>
-                                            <th class="border rounded-0 border-3 border-warning"
-                                                style="background: transparent;text-align: center;font-size: 14px;border-style: solid;border-color: var(--bs-orange);border-top-color: var(--bs-yellow);">
-                                                R Phase Voltage</th>
-                                            <th class="border rounded-0 border-3 border-warning"
-                                                style="background: transparent;text-align: center;font-size: 14px;border-style: solid;border-color: var(--bs-orange);border-top-color: var(--bs-yellow);">
-                                                Y Phase Voltage</th>
-                                            <th class="border rounded-0 border-3 border-warning"
-                                                style="background: transparent;text-align: center;font-size: 14px;border-style: solid;border-color: var(--bs-orange);border-top-color: var(--bs-yellow);">
-                                                B Phase Voltage</th>
-                                            <th class="border rounded-0 border-3 border-warning"
-                                                style="background: transparent;text-align: center;font-size: 14px;border-style: solid;border-color: var(--bs-orange);border-top-color: var(--bs-yellow);">
-                                                Ware House On Unix Timestamp</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody></tbody>
-                                </table>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-9"><label class="col-form-label">Showing 0 to 0 of 0 entries</label></div>
-                        <div class="col-3" style="text-align: right;margin: 0px;">
-                            <div class="btn-group" role="group" style="margin-bottom: 3px;"><button
-                                    class="btn btn-primary" type="button"
-                                    style="background: transparent;border-style: solid;border-color: var(--bs-dark);color: var(--bs-body-color);">Previous</button><button
-                                    class="btn btn-primary" type="button"
-                                    style="background: transparent;border-style: solid;border-color: var(--bs-dark);color: var(--bs-body-color);">Next</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-            </body>
-
-            </html>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-9" style="margin-top: 4px;margin-bottom: 7px;"><label class="col-form-label" style="margin-top: 2px;margin-bottom: 2px;margin-left: 4px;">Showing 0 to 0 of 0 entries</label></div>
+            <div class="col-3" style="text-align: right;margin-top: 4px;margin-bottom: 7px;">
+                <div class="btn-group" role="group" style="margin-top: 2px;margin-bottom: 2px;margin-right: 4px;"><button class="btn btn-primary" type="button" style="background: transparent;border-style: solid;border-color: var(--bs-dark);color: var(--bs-body-color);">Previous</button><button class="btn btn-primary" type="button" style="background: transparent;border-style: solid;border-color: var(--bs-dark);color: var(--bs-body-color);">Next</button></div>
+            </div>
+        </div>
+    </div>
+            
 
         </div>
 
@@ -218,9 +157,7 @@
     </div>
 
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
     <script>
         var el = document.getElementById("wrapper")
@@ -230,6 +167,7 @@
             el.classList.toggle("toggled")
         }
     </script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
 </body>
 
 </html>
